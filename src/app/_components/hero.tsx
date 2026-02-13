@@ -1,36 +1,36 @@
 export function Hero() {
-    return (
-        <section className="bg-[#0f192e] text-[#059ad9] overflow-hidden">
+  return (
+    <section className="relative bg-[#172a53] text-white overflow-hidden py-16 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4 max-w-7xl">
+        <article className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          <div className="space-y-6 max-w-3xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+              Licitações com a IA Econect <span className="text-[#059ad9]">mais agilidade, precisão e transparência</span>
+            </h1>
             
-            <div>
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+              Nossa inteligência artificial automatiza e gera documentos para 
+              processos licitatórios, organizando fluxos e simplificando cada etapa. 
+              Desburocratize a gestão pública e elimine a morosidade com eficiência e inovação.
+            </p>
 
-                <article>
-
-                    <div>
-
-                        <h1>
-                            Licitações com a IA Econect mais agilidade, precisão e transparência
-                        </h1>
-
-                        <p>
-                            Nossa inteligência artificial automatiza e gera documentos para 
-                            processos licitatórios, organizando fluxos e simplificando cada etapa. 
-                            Com isso, desburocratiza a gestão pública, elimina a morosidade
-                            e promove mais eficiência, inovação e transparência no setor.
-                        </p>
-
-                        <div>
-                            <a href="#">
-                                CONTATO
-                            </a>
-                        </div>
-
-                    </div>
-
-                </article>
-
+            <div className="pt-4">
+              <a 
+                href="#contato" 
+                className="inline-block bg-[#059ad9] hover:bg-[#047db8] text-white font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-[#059ad9]/20 transition-all transform hover:-translate-y-1"
+              >
+                QUERO SABER MAIS
+              </a>
             </div>
+          </div>
 
-        </section>
-    );
+          <div className="hidden lg:block relative">
+             <div className="absolute -inset-4 bg-[#059ad9]/10 blur-3xl rounded-full"></div>
+          </div>
+
+        </article>
+      </div>
+    </section>
+  );
 }
